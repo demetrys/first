@@ -2,19 +2,10 @@
 <html>
   <head>
     <title>iRock - Віртуальна каменюка</title>
-
-    <script type="text/javascript">
-      function touchRock() {
-        var userName = prompt("Як звати?", "Введіть Ваше ім'я.");
-        if (userName) {
-          alert("Здоровеньки були, " + userName + ".");
-          document.getElementById("rockImg").src="img/rock_happy.png";
-        }
-      }
-    </script>
+    <script src="js/irock.js"></script>
   </head>
 
-  <body onload="alert('Привіт! Я - каменючка!');">
+  <body onload="alert('Привіт, друже! Я - віртуальна каменючка!');">
     <div style="margin-top:100px; text-align:center">
       <img id="rockImg" src="img/rock.png" alt="iRock" style="cursor:pointer" onclick="touchRock();" />
     </div>
